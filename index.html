@@ -18,8 +18,9 @@
 </head>
 
 <body>
+    <button onclick="playAudio()">Play Music</button>
 
-    <audio class="song" loop autoplay>
+    <audio id="myAudio" class="song" loop autoplay>
         <source src="./music/hbd.mpeg">
         </source>
         Your browser isn't invited for super fun audio time.
@@ -152,5 +153,11 @@
     <!-- Sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="application/javascript" src="./script/main.js"></script>
+    <script>
+  function playAudio() {
+    document.getElementById("myAudio").play();
+  }
+</script>
+
 
 </html>
